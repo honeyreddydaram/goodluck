@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>For Ananya · PNLI Farewell</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.js"></script>
+<script defer src="config.js"></script>
+<script defer src="app.js"></script>
+</head>
+<body>
+<header class="top"><div class="wrap bar">
+<a class="brand" href="./"><strong>PNLI</strong><span>Patsy Nelms Literacy Initiative</span></a>
+<button id="share" class="outline" type="button">Share QR</button>
+</div></header>
+<main class="wrap">
+<section class="hero" aria-labelledby="title">
+<div class="hero-copy">
+<p class="eyebrow">A farewell from your PNLI team</p>
+<h1 id="title">Ananya,<br><em>you’re off to AWS!</em></h1>
+<p>Congratulations on the new role! We’ll miss having you on our team, and we’ll be cheering for you in your next chapter.</p>
+<a class="button" href="#write">Leave a note <span aria-hidden="true">↘</span></a>
+</div>
+<div class="pitch" aria-hidden="true"><div class="jersey"><span>ANANYA</span><b>7</b></div><span class="pitch-caption">SIUUU!</span></div>
+</section>
+<div class="content">
+<section class="compose" id="write">
+<h2>Write to Ananya</h2>
+<p class="sub">Share a favorite memory, some good wishes, or your best SIUUU.</p>
+<form id="form">
+<label for="author">Your name <small>(optional)</small></label>
+<input id="author" name="author" maxlength="50" placeholder="Anonymous" autocomplete="given-name">
+<label for="message">Your note</label>
+<textarea id="message" name="message" maxlength="500" required placeholder="Dear Ananya, …"></textarea>
+<div class="meta"><span>Notes appear on the public wall.</span><span id="count">0 / 500</span></div>
+<button class="button" id="send" type="submit" disabled>Send note <span aria-hidden="true">↗</span></button>
+<p id="status" role="status"></p>
+</form>
+</section>
+<section class="wall" aria-labelledby="wall-heading">
+<div class="wall-head"><h2 id="wall-heading">The farewell wall</h2><span id="total"></span></div>
+<p class="sub" role="status" id="wall-status">Loading notes…</p>
+<div id="notes"></div>
+</section>
+</div>
+</main>
+<footer class="wrap">From the Patsy Nelms Literacy Initiative team</footer>
+<dialog id="share-dialog">
+<form method="dialog"><button class="close outline" aria-label="Close QR dialog">✕</button></form>
+<h2>Scan to sign the wall</h2>
+<p>Open your phone’s camera and point it at the code.</p>
+<div id="qr"></div>
+<a id="download" class="button" download="ananya-farewell-qr.png" hidden>Download QR</a>
+<button id="copy" type="button" class="outline">Copy link</button>
+<p id="share-status" role="status"></p>
+</dialog>
+</body>
+</html>
